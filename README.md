@@ -1,15 +1,10 @@
-### Hi there 👋
+# Hello world 👋🏻 
 
-I am Kavin kumar AKA RBKavin .
-I make filters on instagram , Snapchat and facebook and im a XR Creator .
-<!--
-**rbkavin/rbkavin** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Hi! I'm Kavin kumar aka rbkavin . 
 
-Here are some ideas to get you started:
+- I love to create art with tech and love to code
+- I make Effects on **IG - Snap ( Official Lens Creator )** as hobby and job
+- I play with reality with my **XR - AR - VR**  creations 
 
-- 🔭 I’m currently working on ... Social AR and Web 3d 
-- 🌱 I’m currently learning ... Three js , shaders
-- 📫 How to reach me: ... IG : RBKAVIN
-- 😄 Pronouns: ... him / he
-- ⚡ Fun fact: ... 
--->
+you can contact me  [Instagram](https://instagram.com/rbkavin)  , [Snapchat](https://www.snapchat.com/add/kavinrb) , [My website](https://rbkaivn.in)
+
