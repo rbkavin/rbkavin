@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rbkavin Socials</title>
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="description" content= "Social media links of Kavin kumar AKA RBkavin"> 
+  <meta property ="og:description" content= "Social media links of Kavin kumar AKA RBkavin" > 
+<meta property="og:url" content="https://rbkavin.in/social" >
+ 
+<meta property=" og:type"  content="website" > 
+</head>
+<body>
+    
+
+    <img src="assets/iconRbkavin.png" alt="Rbkavin's picture" class="profile-picture">
+
+
+    <div class="profile-name">@rbkavin</div>
+    <div id="linkDiv">
+
+
+    </div>
+       
+ <script>
+    const links=[
+        {
+title:"Instagram",
+link:"https://instagram.com/rbkavin"
+        },
+   {
+title:"Youtube",
+link:"https://www.youtube.com/c/RbkavinStudio"
+        },
+           {
+title:"Snapchat",
+link:"https://www.snapchat.com/add/rbkavin"
+        },
+          
+           {
+title:"Twitter",
+link:"http://twitter.com/rbkavin"
+        },
+         {
+title:"Linked In",
+link:"https://www.linkedin.com/in/rbkavin"
+        },
+          
+ 
+//         {
+// title:"",
+// link:""
+//         },
+    ];
+links.forEach((i)=>{
+
+    
+     createLink( document.getElementById("linkDiv"),i.link,i.title) 
+
+})
+function createLink(main,link_,title_) {
+                  
+           var a = document.createElement('a'); 
+             
+                var link = document.createTextNode(title_);
+                  
+           
+                a.appendChild(link); 
+           
+                a.title = title_; 
+                  a.className="links";
+               
+                a.href = link_; 
+                  
+             
+                main.appendChild(a); 
+            }
+    function setAppleFavicons() {
+    let headTitle = document.querySelector('head');
+
+    let appleFavIcons = [{
+            rel: 'icon',
+
+            sizes: '32x32',
+            href: '/threejstest/fav/favicon-32x32.png'
+        },
+        {
+            rel: 'icon',
+            sizes: '16x16',
+            href: '/threejstest/fav/favicon-16x16.png'
+        },
+        {
+
+
+            rel: 'apple-touch-icon',
+            sizes: '180x180',
+            href: '/threejstest/fav/apple-touch-icon.png'
+        },
+
+        {
+
+
+            rel: 'shortcut icon',
+            sizes: null,
+            href: '/threejstest/fav/favicon.ico'
+        }
+    ]
+
+    appleFavIcons.forEach(function (appleFavIcon) {
+        let setAFavicon = document.createElement('link');
+        setAFavicon.setAttribute('rel', appleFavIcon.rel);
+        if (appleFavIcon.sizes == null) {
+
+        } else {
+            setAFavicon.setAttribute('sizes', appleFavIcon.sizes);
+        }
+        setAFavicon.setAttribute('href', appleFavIcon.href);
+        headTitle.appendChild(setAFavicon);
+    });
+}
+setAppleFavicons();
+</script>
+</body>
+</html>
