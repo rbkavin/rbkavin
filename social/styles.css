@@ -46,6 +46,7 @@ img {
   color: white;
   margin: 0 auto;
   display: block;
+  font-family: myfont;
 }
 
 button {
@@ -100,6 +101,7 @@ button {
 }
 
 .front {
+  font-family: myfont;
   display: block;
   position: relative;
   padding: 12px 42px;
