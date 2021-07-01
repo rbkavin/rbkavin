@@ -1,8 +1,13 @@
+@font-face {
+  font-family: myfont;
+  src: url(/threejstest/fonts/Itim/Itim-Regular.ttf);
+}
+
 body {
-  background: black;
+  background: #467FE7;
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-family: myfont;
+  font-size: 20px;
   letter-spacing: 2px;
 }
 
@@ -21,36 +26,106 @@ img {
 
 .profile-name {
   text-align: center;
+  font-size: 30px;
   padding: 30px;
 }
 
-.links {
-  text-align: center;
-  margin-top: 20px;
-  padding: 20px;
-  border: 1px solid white;
-  border-width: 2px;
-  width: 290px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 40px;
+
+.wrapers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
 }
 
-a {
-  text-decoration: none;
+.text {
+  /* margin: 300px auto; */
+  min-width: 200px;
+  text-align: center;
   color: white;
-  transition: color 1s;
+  margin: 0 auto;
+  display: block;
 }
 
-.bottom-text {
+button {
+  min-width: 200px;
+
+}
+
+.fronts {
+
+  position: absolute;
+  /* left: 100px; */
+  /* top: 150px; */
+  z-index: 1;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  margin-top: 40px;
-  font-size: 20px;
-  font-weight: bold;
 }
 
-a:hover {
-  color: #000;
-  background: #fff;
+
+
+
+.pushable {
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  transform: translateY(2px);
+}
+
+.edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(340deg 100% 32%);
+}
+
+.front {
+  display: block;
+  position: relative;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  color: white;
+  background: hsl(345deg 100% 47%);
+  transform: translateY(-4px);
+}
+
+.pushable:hover .front {
+  transform: translateY(-6px);
+}
+
+.pushable:hover .shadow {
+  transform: translateY(4px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+}
+
+.pushable:active .shadow {
+  transform: translateY(1px);
+}
+
+.pushable:focus:not(:focus-visible) {
+  outline: none;
 }
