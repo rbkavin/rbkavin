@@ -42,3 +42,49 @@ function setAppleFavicons() {
     });
 }
 setAppleFavicons();
+const links = [{
+        title: "Instagram portfolio",
+        link: "https://www.facebook.com/sparkarhub/portfolios/ig/rbkavin/"
+    },
+    {
+        title: "Snaplens portfolio",
+        link: "https://lensstudio.snapchat.com/creator/3dRaqaIS7GMYJrLO4omM5w"
+    },
+
+    //         {
+    // title:"",
+    // link:""
+    //         },
+];
+links.forEach((i) => {
+    createButton(document.getElementById("linkDiv"), i.link, i.title)
+
+})
+
+function createButton(main, link_, title_) {
+
+    var wraper = document.createElement('div');
+    wraper.className = "wrapers";
+    var a = document.createElement('a');
+    a.href = link_;
+    var button = document.createElement('button');
+    button.className = "pushable"
+    var span1 = document.createElement('span');
+    span1.className = 'shadow';
+    var span2 = document.createElement('span');
+    span2.className = 'edge';
+
+    var span3 = document.createElement('span');
+    span3.className = 'front';
+
+    var link = document.createTextNode(title_);
+    span3.appendChild(link)
+
+    button.appendChild(span1)
+    button.appendChild(span2)
+    button.appendChild(span3)
+
+    a.appendChild(button)
+    wraper.appendChild(a);
+    main.appendChild(wraper);
+}
