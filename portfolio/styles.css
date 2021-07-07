@@ -38,11 +38,52 @@ img {
   border-radius: 50%
 }
 
+@media only screen and (max-width: 600px) {
+  .back {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .arrow {
+
+
+    border-width: 0 5px 5px 0;
+    width: 10px;
+    height: 10px;
+    top: 8px;
+    left: 10px;
+
+  }
+}
+
 .right {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 
 
+}
+
+.lessMargin {
+  margin: 0;
+}
+
+.left {
+  position: relative;
+  top: -4px;
+  /* left: -30px; */
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  width: 5px;
+  height: 5px;
+
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+}
+
+.selected {
+  background-color: #24a0e7;
 }
 
 .profile-picture {
@@ -84,7 +125,7 @@ img {
 }
 
 button {
-  min-width: 200px;
+  min-width: 100px;
 
 }
 
@@ -101,9 +142,6 @@ button {
   justify-content: center;
   text-align: center;
 }
-
-
-
 
 .pushable {
   position: relative;
@@ -162,6 +200,58 @@ button {
   transform: translateY(1px);
 }
 
+
 .pushable:focus:not(:focus-visible) {
   outline: none;
+}
+
+#portfolioWraper {
+  /* font-size: 4vw; */
+
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-container>div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+  width: inherit;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: inherit;
+
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

@@ -56,10 +56,10 @@ const links = [{
     // link:""
     //         },
 ];
-links.forEach((i) => {
-    createButton(document.getElementById("linkDiv"), i.link, i.title)
+// links.forEach((i) => {
+//     createButton(document.getElementById("linkDiv"), i.link, i.title)
 
-})
+// })
 
 function createButton(main, link_, title_) {
 
@@ -83,8 +83,25 @@ function createButton(main, link_, title_) {
     button.appendChild(span1)
     button.appendChild(span2)
     button.appendChild(span3)
+    if (link_ == null) {
 
-    a.appendChild(button)
-    wraper.appendChild(a);
+        wraper.appendChild(button);
+
+    } else {
+        a.appendChild(button)
+        wraper.appendChild(a);
+    }
+
     main.appendChild(wraper);
 }
+
+const projectLinks = [{
+    type: "",
+    platform: "",
+    link: "",
+    videoLink: "",
+}]
+// const wraper = document.getElementById("portfolioWraper");
+// for (let i = 0; i <= 10; i++) {
+
+// }
