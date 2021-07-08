@@ -145,7 +145,7 @@ function createPortfolio(catagory) {
             print = false;
         }
         if (print) {
-            createCards(wraper, a.platform);
+            // createCards(wraper, a.platform);
         }
     })
 
